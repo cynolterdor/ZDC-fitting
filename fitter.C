@@ -152,16 +152,16 @@ int fitter() {
 
 
     //Draw the histogram and the fits
-    hZDCp_En->GetXaxis()->SetRangeUser(0, 1000);
+    hZDCp_En->GetXaxis()->SetRangeUser(0, 10000);
     hZDCp_En->Draw();
 
     f1->SetRange(0, x_fit1p_1);
 
-    f1->Draw("same");
+    //f1->Draw("same");
     f1_1->SetRange(x_fit1p_1, x_fit1p_2);
     f1_1->SetLineColor(kGreen);
     f1_1->SetLineWidth(2);
-    f1_1->Draw("same");
+    //f1_1->Draw("same");
     f1_2->SetRange(x_fit1p_2, x_fit1p);
     f1_2->SetLineColor(kBlue);
     f1_2->SetLineWidth(2);
@@ -169,7 +169,7 @@ int fitter() {
     f1_3->SetRange(0, x_fit1p);
     f1_3->SetLineColor(kOrange);
     f1_3->SetLineWidth(2);
-    //f1_3->Draw("same");
+    f1_3->Draw("same");
 
     f2_1->SetRange(0, 8000);
     f2_1->SetLineColor(kGray);
